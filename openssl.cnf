@@ -1,10 +1,8 @@
-user@localhost ~ $ git clone https://github.com/rbu/generate_csr ; cd gen_csr
-user@localhost ~/generate_csr $ openssl genrsa -out private.key 8192            # because... why not?
-Generating RSA private key, 8192 bit long modulus
-...
-user@localhost ~/generate_csr $ ./generate_csr.py --batch --key private.key rbu.sh www.rbu.sh mail.rbu.sh
------BEGIN CERTIFICATE REQUEST-----
-MIIIoDCCBIgCAQAwHjELMAkGA1UEBhMCWFgxDzANBgNVBAMMBnJidS5zaDCCBCIw
-...
-AedjkA==
------END CERTIFICATE REQUEST-----
+openssl genrsa -des3 -out server.key 2048
+
+Generating RSA private key, 2048 bit long modulus
+.........................................................++++++
+........++++++
+e is 65537 (0x10001)
+Enter PEM pass phrase:
+Verifying password - Enter PEM pass phrase:

@@ -1,0 +1,17 @@
+./generate_csr.py --help                            
+usage: generate_csr.py [-h] [--batch] [--key PRIVATE_KEY_FILE]
+                       DOMAIN [DOMAIN ...]
+
+Generate SSL CSRs with Subject Alternative Names
+
+positional arguments:
+  DOMAIN                Domain names to request. First domain is the common
+                        name.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --batch               Batch mode, supress interaction and go with defaults.
+  --key PRIVATE_KEY_FILE
+                        Path to a private key file to generate a CSR for. To
+                        generate a key, consider calling 'openssl genrsa -out
+                        private.key 4096'

@@ -1,0 +1,281 @@
+@import "config";
+
+// CUSTOM USER STYLES & IMPORTS
+
+// -----------------------ОБЩИЕ СТИЛИ-----------------------
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+body {
+  background-image: url(img/bg.jpg);
+  color: #6AFFFF;
+  text-align: center;
+}
+
+.page__title {
+  color: #6AFFFF;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+// -----------------------ОБЩИЕ СТИЛИ-----------------------
+
+// -----------------------ШАПКА-----------------------
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(31, 30, 30, 0.55);
+  border: 2px solid #6AFFFF;
+  padding: 5px 50px;
+}
+
+.main-menu {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  a {
+    margin: 10px;
+    color: #6AFFFF;
+  }
+}
+
+.block__btn {
+  padding: 0 40px;
+}
+
+.header__btn {
+  background-color: rgba(2, 14, 54, 0.55);
+  border: 2px solid #6AFFFF;
+  color: #6AFFFF;
+
+  &:hover {
+    background-color: rgba(130, 154, 233, 0.55);
+  }
+}
+
+.logo {
+  img {
+    max-width: 100px;
+  }
+}
+
+.content {
+  border: 2px solid #6AFFFF;
+  border-top: none;
+  padding-bottom: 20px;
+  min-height: 73vh;
+}
+
+.title-block {
+  padding: 40px 0;
+  text-align: center;
+
+  p {
+    margin-top: 5px;
+    color: #6AFFFF;
+  }
+}
+
+.content__block {
+  border: 2px solid #6AFFFF;
+  background: rgba(31, 30, 30, 0.55);
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 600px;
+  color: #6AFFFF;
+  margin: 0 auto;
+}
+
+.city {
+  padding: 60px 0;
+}
+
+.city-title {
+  border: 2px solid #6AFFFF;
+  background: rgba(31, 30, 30, 0.55);
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 200px;
+
+  p {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+}
+
+.city-img {
+  padding: 20px 0 10px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.bottom-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+
+  .line {
+    width: 300px;
+    height: 5px;
+    background-color: #6AFFFF;
+  }
+
+  .ring {
+    width: 12px;
+    height: 12px;
+    background-color: #6AFFFF;
+    border-radius: 50%;
+    margin: 0 25px;
+  }
+}
+
+.craft__content {
+  padding-top: 40px;
+}
+
+.craft__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.craft__item {
+  img {
+    max-width: 100px;
+  }
+}
+
+
+// Адаптив
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+/**/
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 14px;
+  }
+
+  .header__wrap {
+    padding: 5px;
+  }
+
+  .main-menu {
+    a {
+      font-size: 14px;
+      margin: 5px;
+    }
+  }
+
+  .header__btn {
+    font-size: 14px;
+  }
+
+  .logo {
+    img {
+      max-width: 50px;
+    }
+  }
+
+  .title-block {
+    padding: 20px 0;
+
+    p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+
+  .page__title {
+    font-size: 20px;
+  }
+
+  .content__block {
+    border-radius: 38px;
+    max-width: 85%;
+  }
+
+.city {
+  padding: 30px;
+}
+
+  .city-title {
+    border-radius: 38px;
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .city-img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.bottom-line {
+  .line {
+    width: 100px;
+    height: 2px;
+    background-color: #6AFFFF;
+  }
+
+  .ring {
+    width: 12px;
+    height: 12px;
+    background-color: #6AFFFF;
+    border-radius: 50%;
+    margin: 0 20px;
+  }
+}
+
+.craft__item {
+  img {
+    max-width: 100%;
+  }
+}
+
+.min {
+  max-width: 7%;
+}
+
+/**/
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
+
+/**/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+/**/
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
